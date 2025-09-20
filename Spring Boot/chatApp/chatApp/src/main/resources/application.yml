@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:chatapp
+    driverClassName: org.h2.Driver
+    username: sa
+    password: password
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+  h2:
+    console:
+      enabled : true
+
+jwt:
+  secret: "b72a7d99e1a34c5fb7d4af1e8a91c40b8e4c7d92b5ac74ff2c1d8791d3a5b2a0"
+  expiration: 3600000
+
+
+
+
